@@ -1,0 +1,14 @@
+version: '3'
+
+tasks:
+  build:
+    desc: Kompiluje program
+    cmds:
+      - g++ main.cpp -o main
+
+  run:
+    desc: Kompiluje i uruchamia program
+    deps:
+      - build
+    cmds:
+      - ./main
