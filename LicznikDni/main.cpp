@@ -38,6 +38,34 @@ int main()
     cout <<">";
     cin >> dzienKoncowy;
 
+    // 1.1 Jesli daty sa w zlej kolejnosci to mozemy je zamienic
+    bool czyZamienione;
+    if (rokKoncowy < rokPoczatkowy)
+        czyZamienione = true;
+    else if ( (rokKoncowy == rokPoczatkowy) && (miesiacKoncowy < miesiacPoczatkowy))
+    {
+        czyZamienione = true;
+    }
+    else if ( (rokKoncowy == rokPoczatkowy) && (miesiacKoncowy == miesiacPoczatkowy) 
+            && (dzienKoncowy < dzienPoczatkowy) )
+    {
+        czyZamienione = true;
+    }
+    else
+        czyZamienione = false;
+    if (czyZamienione)
+    {
+        int rokTemp = rokPoczatkowy;
+        int miesiacTemp = miesiacPoczatkowy;
+        int dzienTemp = dzienPoczatkowy;
+        rokPoczatkowy = rokKoncowy;
+        miesiacPoczatkowy = miesiacKoncowy;
+        dzienPoczatkowy = dzienKoncowy;
+        rokKoncowy = rokTemp;
+        miesiacKoncowy = miesiacTemp;
+        dzienKoncowy = dzienTemp;
+    }
+
     // 2. Musze policzyc ilosc dni miedzy tymi datami
 
     // skopiujmy date poczatkowa i zwiekszajkmy o jeden dzien az dojdziemy
