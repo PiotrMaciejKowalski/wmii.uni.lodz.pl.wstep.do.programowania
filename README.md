@@ -18,3 +18,4 @@ owner: piotr kowalski
 | 11 | Sebastian Imiolek | https://github.com/sebski1337/wdp-2026-imiolek | 
 | 12 | Aleksander Świderski | https://github.com/AleksanderSwiderski/wdp-2026-aleksanderswiderski |
 | 13 | Anna Kabzińska | https://github.com/anna-kbz/wdp-2026-kabzinska |
+| 14 | Dawid Chustecki | https://github.com/DawidCh2077/wdp-2026-chustecki"
